@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Year plan</title>
+    <link rel="stylesheet" href="2years.css">
+ </head>
+ <body>
+    <div class="container">
+        <div class="title">
+            <h1> </h1>
+        </div>
+        <div class="intro">
+            <h2>
+               2Years plan <br>
+            </h2>
+              
+            <div class="date"> 
+
+                <p id="dateInWords"></p>
+              
+                <script>
+                  function getDateInWords() {
+                    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                    const monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+              
+                    const currentDate = new Date();
+                    const dayOfWeek = daysOfWeek[currentDate.getDay()];
+                    const dayOfMonth = currentDate.getDate();
+                    const month = monthsOfYear[currentDate.getMonth()];
+                    const year = currentDate.getFullYear();
+              
+                    const dateInWords = `${dayOfWeek}, ${dayOfMonth} ${month} ${year}`;
+                    return dateInWords;
+                  }
+              
+                  function updateDateInWords() {
+                    document.getElementById("dateInWords").innerHTML = getDateInWords();
+                  }
+              
+                  setInterval(updateDateInWords, 1000);
+                </script></div>
+             <div class="time"><p id="currentTime"></p>
+
+                <script>
+                  function updateTime() {
+                    var currentDate = new Date();
+                    var hours = currentDate.getHours();
+                    var minutes = currentDate.getMinutes();
+                    var seconds = currentDate.getSeconds();
+              
+                    hours = (hours < 10 ? "0" : "") + hours;
+                    minutes = (minutes < 10 ? "0" : "") + minutes;
+                    seconds = (seconds < 10 ? "0" : "") + seconds;
+              
+                    var timeString = hours + ":" + minutes + ":" + seconds;
+                    document.getElementById("currentTime").innerHTML = timeString;
+                  }
+              
+                  setInterval(updateTime, 1000);
+                </script></div>
+        </div>
+        <div class="step1"> 
+            <div class="box1">
+                <div class="text1"> 
+                    <h2>Mastering HTML and CSS</h2>
+                </div>
+            </div>
+            <div class="box"> 
+                <div class="text_b">
+                    <p>Understand basic HTML syntax and structure <br>
+                        Learn semantic HTML elements like headings, paragraphs, lists, links, images <br>
+                        Study CSS selectors, properties, and values <br>
+                        Practice writing clean, well-structured code</p>
+                </div>
+            </div>
+        </div>
+        <div class="step2"> 
+            <div class="box">
+                <div class="text_b2"> 
+                    <p> Learn JavaScript syntax and data types <br>
+                        Understand DOM manipulation and events <br>
+                        Practice building interactive features <br>
+                        Learn asynchronous programming with AJAX <br>
+                    </p>   
+                </div>
+            </div>
+            <div class="box2"> 
+                <div class="text2">
+                    <h2> Learning JavaScript and diving into backend
+                    </h2>    
+                </div>
+            </div>
+        </div>
+        <div class="step3"> 
+            <div class="box3">
+                <div class="text3"> 
+                    <h2>Explore a Frontend Framework</h2>
+                </div>
+            </div>
+            <div class="box"> 
+                <div class="text_b3">
+                    <p> Choose a frontend framework like React, Angular, or Vue <br>
+                        Learn the core concepts and architecture <br>
+                        Practice building complex user interfaces <br>
+                        Learn about state management and routing</p>
+                </div>
+            </div>
+        </div>
+        <div class="step4"> 
+            <div class="box">
+                <div class="text_b4"> 
+                    <p> Learn about web performance optimization <br>
+                        Study web accessibility best practices <br>
+                        Practice refactoring and clean code 
+                         
+                    </p>   
+                </div>
+            </div>
+            <div class="box4"> 
+                <div class="text4">
+                    <h2> Enhance Your Skills 
+                    </h2>    
+                </div>
+            </div>
+        
+            
+    </div>
+    <div class="step5">
+        <div class="links">
+            <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>  
+            <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a> 
+            <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+        </div>
+        <div class="info" data-testid="displayName">Ibekwe Kosisochukwu Caleb</div>
+        <div class="info" data-testid="email"><a href="mailto:calebibekwe31@gmail.com">calebibekwe31@gmail.com</a></div>
+     
+        <div class="profile">
+            <img src="img/profile.kosi.png" alt="">
+        </div> 
+    </div>  
+    
+ </body>
+ </html>

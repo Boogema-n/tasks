@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 5% 10%;
+    font-family: "Roboto Slab", serif;
+  }
+  
+  .intro {
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .step1, .step2, .step3, .step4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
+    margin-bottom: 5%;
+  }
+  
+  .box1, .box2, .box4 {
+    position: relative;
+    height: 15rem;
+    width: 30%;
+    border-radius: 1rem;
+  }
+  
+  .text1, .text2, .text3, .text4 {
+    font-size: 1.4rem;
+    color: rgb(20, 90, 66);
+  }
+  
+  .text_b, .text_b2, .text_b3, .text_b4 {
+    font-size: large;
+    color: rgb(20, 90, 66);
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color:aliceblue;
+}
+ .step5{
+    background-color:rgb(190, 205, 220);
+    border-radius: 1rem ;
+   
+    border: 1px solid black;
+
+ }
+  
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    
+  }
+  
+  .links a {
+    color: rgb(20, 90, 66);
+    text-decoration: none;
+  }
+  .links  :hover {
+    color: rgb(0, 0, 0);
+     
+  }
+  
+  .info {
+    font-size:1.5rem;
+  }
+  
+  .profile img {
+     
+    border-radius: 50%;
+  }
